@@ -88,7 +88,7 @@
 		format("woff2");
 }
 
-.fontAwesome {
+.fa {
 	position: relative;
 	width: var(--iconSize);
 	height: var(--iconSize);
@@ -105,63 +105,52 @@
 	z-index: 1;
 	transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
-
-.fontAwesome::before {
+.fa::before {
 	position: absolute;
 	display: block;
 	color: inherit;
 	content: attr(data-content);
 }
-
-.fontAwesome.thin {
+.fa.thin {
 	font-family: FontAwesome;
 	font-weight: 100;
 }
-
-.fontAwesome.light {
+.fa.light {
 	font-family: FontAwesome;
 	font-weight: 300;
 }
-
-.fontAwesome.regular {
+.fa.regular {
 	font-family: FontAwesome;
 	font-weight: 400;
 }
-
-.fontAwesome.solid {
+.fa.solid {
 	font-family: FontAwesome;
 	font-weight: 900;
 }
-
-.fontAwesome.duotone {
+.fa.duotone {
 	font-family: FontAwesomeDuotone;
 	font-weight: 900;
 }
-
-.fontAwesome.duotone::after {
+.fa.duotone::after {
 	position: absolute;
 	display: block;
 	color: inherit;
 	content: attr(data-content) attr(data-content);
 	opacity: 0.3;
 }
-
-.fontAwesome.sharpSolid {
+.fa.sharpSolid {
 	font-family: FontAwesomeSharp;
 	font-weight: 900;
 }
-
-.fontAwesome.sharpRegular {
+.fa.sharpRegular {
 	font-family: FontAwesomeSharp;
 	font-weight: 400;
 }
-
-.fontAwesome.sharpLight {
+.fa.sharpLight {
 	font-family: FontAwesomeSharp;
 	font-weight: 300;
 }
-
-.fontAwesome.brand {
+.fa.brand {
 	font-family: FontAwesomeBrand;
 	font-weight: 400;
 }
