@@ -1,4 +1,4 @@
-.barberPole ::after {
+.barberPole::after {
 	content: '';
 	position: absolute;
 	display: block;
