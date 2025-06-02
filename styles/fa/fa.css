@@ -4,8 +4,7 @@
 	font-style: normal;
 	font-weight: 100;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-thin-100.woff2")
-		format("woff2");
+	src: url('./fa-thin-100.woff2') format('woff2');
 }
 
 /* Font Awesome Classic Light */
@@ -14,8 +13,7 @@
 	font-style: normal;
 	font-weight: 300;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-light-300.woff2")
-		format("woff2");
+	src: url('./fa-light-300.woff2') format('woff2');
 }
 
 /* Font Awesome Classic Regular */
@@ -24,8 +22,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-regular-400.woff2")
-		format("woff2");
+	src: url('./fa-regular-400.woff2') format('woff2');
 }
 
 /* Font Awesome Classic Solid */
@@ -34,8 +31,7 @@
 	font-style: normal;
 	font-weight: 900;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-solid-900.woff2")
-		format("woff2");
+	src: url('./fa-solid-900.woff2') format('woff2');
 }
 
 /* Font Awesome Duotone */
@@ -44,8 +40,7 @@
 	font-style: normal;
 	font-weight: 900;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-duotone-900.woff2")
-		format("woff2");
+	src: url('./fa-duotone-900.woff2') format('woff2');
 }
 
 /* Font Awesome Sharp Light */
@@ -54,8 +49,7 @@
 	font-style: normal;
 	font-weight: 300;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-sharp-light-300.woff2")
-		format("woff2");
+	src: url('./fa-sharp-light-300.woff2') format('woff2');
 }
 
 /* Font Awesome Sharp Regular */
@@ -64,8 +58,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-sharp-regular-400.woff2")
-		format("woff2");
+	src: url('./fa-sharp-regular-400.woff2') format('woff2');
 }
 
 /* Font Awesome Sharp Solid */
@@ -74,8 +67,7 @@
 	font-style: normal;
 	font-weight: 900;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-sharp-solid-900.woff2")
-		format("woff2");
+	src: url('./fa-sharp-solid-900.woff2') format('woff2');
 }
 
 /* Font Awesome Brand */
@@ -84,8 +76,7 @@
 	font-style: normal;
 	font-weight: 400;
 	font-display: block;
-	src: url("https://raw.githubusercontent.com/itzzjarvis/Assets/main/fonts/fontAwesome/fa-brands-400.woff2")
-		format("woff2");
+	src: url('./fa-brands-400.woff2') format('woff2');
 }
 
 .fa {
@@ -103,7 +94,7 @@
 	-moz-osx-font-smoothing: grayscale;
 	-webkit-font-smoothing: antialiased;
 	z-index: 1;
-	transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+	transition: all var(--animDurFast) var(--cubicBezierPrimary);
 }
 .fa::before {
 	position: absolute;
