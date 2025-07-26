@@ -1,4 +1,4 @@
-/* Font Awesome Classic Thin */
+/* Font Awesome Classic */
 @font-face {
 	font-family: FontAwesome;
 	font-style: normal;
@@ -6,8 +6,6 @@
 	font-display: block;
 	src: url('./fa-thin-100.woff2') format('woff2');
 }
-
-/* Font Awesome Classic Light */
 @font-face {
 	font-family: FontAwesome;
 	font-style: normal;
@@ -15,8 +13,6 @@
 	font-display: block;
 	src: url('./fa-light-300.woff2') format('woff2');
 }
-
-/* Font Awesome Classic Regular */
 @font-face {
 	font-family: FontAwesome;
 	font-style: normal;
@@ -24,8 +20,6 @@
 	font-display: block;
 	src: url('./fa-regular-400.woff2') format('woff2');
 }
-
-/* Font Awesome Classic Solid */
 @font-face {
 	font-family: FontAwesome;
 	font-style: normal;
@@ -38,12 +32,40 @@
 @font-face {
 	font-family: FontAwesomeDuotone;
 	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+	src: url('./fa-duotone-thin-100.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeDuotone;
+	font-style: normal;
+	font-weight: 300;
+	font-display: block;
+	src: url('./fa-duotone-light-300.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeDuotone;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-duotone-regular-400.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeDuotone;
+	font-style: normal;
 	font-weight: 900;
 	font-display: block;
-	src: url('./fa-duotone-900.woff2') format('woff2');
+	src: url('./fa-duotone-solid-900.woff2') format('woff2');
 }
 
-/* Font Awesome Sharp Light */
+/* Font Awesome Sharp */
+@font-face {
+	font-family: FontAwesomeSharp;
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+	src: url('./fa-sharp-thin-100.woff2') format('woff2');
+}
 @font-face {
 	font-family: FontAwesomeSharp;
 	font-style: normal;
@@ -51,8 +73,6 @@
 	font-display: block;
 	src: url('./fa-sharp-light-300.woff2') format('woff2');
 }
-
-/* Font Awesome Sharp Regular */
 @font-face {
 	font-family: FontAwesomeSharp;
 	font-style: normal;
@@ -60,14 +80,42 @@
 	font-display: block;
 	src: url('./fa-sharp-regular-400.woff2') format('woff2');
 }
-
-/* Font Awesome Sharp Solid */
 @font-face {
 	font-family: FontAwesomeSharp;
 	font-style: normal;
 	font-weight: 900;
 	font-display: block;
 	src: url('./fa-sharp-solid-900.woff2') format('woff2');
+}
+
+/* Font Awesome Sharp Duotone */
+@font-face {
+	font-family: FontAwesomeSharpDuotone;
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+	src: url('./fa-sharp-duotone-thin-100.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeSharpDuotone;
+	font-style: normal;
+	font-weight: 300;
+	font-display: block;
+	src: url('./fa-sharp-duotone-light-300.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeSharpDuotone;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-sharp-duotone-regular-400.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeSharpDuotone;
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url('./fa-sharp-duotone-solid-900.woff2') format('woff2');
 }
 
 /* Font Awesome Brand */
@@ -79,6 +127,7 @@
 	src: url('./fa-brands-400.woff2') format('woff2');
 }
 
+/* Font Awesome Icon Classes */
 .fa {
 	position: relative;
 	width: var(--iconSize);
@@ -102,6 +151,8 @@
 	color: inherit;
 	content: attr(data-content);
 }
+
+/* Classic */
 .fa.thin {
 	font-family: FontAwesome;
 	font-weight: 100;
@@ -118,29 +169,71 @@
 	font-family: FontAwesome;
 	font-weight: 900;
 }
-.fa.duotone {
+
+/* Duotone */
+.fa.duotone-thin {
+	font-family: FontAwesomeDuotone;
+	font-weight: 100;
+}
+.fa.duotone-light {
+	font-family: FontAwesomeDuotone;
+	font-weight: 300;
+}
+.fa.duotone-regular {
+	font-family: FontAwesomeDuotone;
+	font-weight: 400;
+}
+.fa.duotone,
+.fa.duotone-solid {
 	font-family: FontAwesomeDuotone;
 	font-weight: 900;
 }
-.fa.duotone::after {
+.fa.duotone::after,
+.fa.duotone-solid::after {
 	position: absolute;
 	display: block;
 	color: inherit;
 	content: attr(data-content) attr(data-content);
 	opacity: 0.3;
 }
-.fa.sharpSolid {
+
+/* Sharp */
+.fa.sharp-thin {
 	font-family: FontAwesomeSharp;
-	font-weight: 900;
+	font-weight: 100;
 }
-.fa.sharpRegular {
-	font-family: FontAwesomeSharp;
-	font-weight: 400;
-}
-.fa.sharpLight {
+.fa.sharp-light {
 	font-family: FontAwesomeSharp;
 	font-weight: 300;
 }
+.fa.sharp-regular {
+	font-family: FontAwesomeSharp;
+	font-weight: 400;
+}
+.fa.sharp-solid {
+	font-family: FontAwesomeSharp;
+	font-weight: 900;
+}
+
+/* Sharp Duotone */
+.fa.sharp-duotone-thin {
+	font-family: FontAwesomeSharpDuotone;
+	font-weight: 100;
+}
+.fa.sharp-duotone-light {
+	font-family: FontAwesomeSharpDuotone;
+	font-weight: 300;
+}
+.fa.sharp-duotone-regular {
+	font-family: FontAwesomeSharpDuotone;
+	font-weight: 400;
+}
+.fa.sharp-duotone-solid {
+	font-family: FontAwesomeSharpDuotone;
+	font-weight: 900;
+}
+
+/* Brand */
 .fa.brand {
 	font-family: FontAwesomeBrand;
 	font-weight: 400;
