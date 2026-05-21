@@ -270,7 +270,10 @@
 }
 .fa::before {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
 	content: attr(data-content);
 }
@@ -314,9 +317,13 @@
 .fa.duotone::after,
 .fa.duotone-solid::after {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
-	content: attr(data-content) attr(data-content);
+	content: attr(data-content);
+	font-feature-settings: "ss01";
 	opacity: 0.3;
 }
 
@@ -391,9 +398,13 @@
 }
 .fa.jelly-duo-regular::after {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
-	content: attr(data-content) attr(data-content);
+	content: attr(data-content);
+	font-feature-settings: "ss01";
 	opacity: 0.3;
 }
 .fa.jelly-fill-regular {
@@ -412,9 +423,13 @@
 }
 .fa.notdog-duo-solid::after {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
-	content: attr(data-content) attr(data-content);
+	content: attr(data-content);
+	font-feature-settings: "ss01";
 	opacity: 0.3;
 }
 
@@ -435,9 +450,13 @@
 }
 .fa.thumbprint-light::after {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
-	content: attr(data-content) attr(data-content);
+	content: attr(data-content);
+	font-feature-settings: "ss01";
 	opacity: 0.3;
 }
 
@@ -458,9 +477,13 @@
 }
 .fa.utility-duo-semibold::after {
 	position: absolute;
-	display: block;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	color: inherit;
-	content: attr(data-content) attr(data-content);
+	content: attr(data-content);
+	font-feature-settings: "ss01";
 	opacity: 0.3;
 }
 .fa.utility-fill-semibold {
