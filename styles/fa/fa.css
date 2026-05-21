@@ -127,12 +127,135 @@
 	src: url('./fa-brands-400.woff2') format('woff2');
 }
 
+/* Font Awesome Chisel */
+@font-face {
+	font-family: FontAwesomeChisel;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-chisel-regular-400.woff2') format('woff2');
+}
+
+/* Font Awesome Etch */
+@font-face {
+	font-family: FontAwesomeEtch;
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url('./fa-etch-solid-900.woff2') format('woff2');
+}
+
+/* Font Awesome Graphite */
+@font-face {
+	font-family: FontAwesomeGraphite;
+	font-style: normal;
+	font-weight: 100;
+	font-display: block;
+	src: url('./fa-graphite-thin-100.woff2') format('woff2');
+}
+
+/* Font Awesome Jelly */
+@font-face {
+	font-family: FontAwesomeJelly;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-jelly-regular-400.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeJellyDuo;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-jelly-duo-regular-400.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeJellyFill;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-jelly-fill-regular-400.woff2') format('woff2');
+}
+
+/* Font Awesome Notdog */
+@font-face {
+	font-family: FontAwesomeNotdog;
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url('./fa-notdog-solid-900.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeNotdogDuo;
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url('./fa-notdog-duo-solid-900.woff2') format('woff2');
+}
+
+/* Font Awesome Slab */
+@font-face {
+	font-family: FontAwesomeSlab;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-slab-regular-400.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeSlabPress;
+	font-style: normal;
+	font-weight: 400;
+	font-display: block;
+	src: url('./fa-slab-press-regular-400.woff2') format('woff2');
+}
+
+/* Font Awesome Thumbprint */
+@font-face {
+	font-family: FontAwesomeThumbprint;
+	font-style: normal;
+	font-weight: 300;
+	font-display: block;
+	src: url('./fa-thumbprint-light-300.woff2') format('woff2');
+}
+
+/* Font Awesome Whiteboard */
+@font-face {
+	font-family: FontAwesomeWhiteboard;
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+	src: url('./fa-whiteboard-semibold-600.woff2') format('woff2');
+}
+
+/* Font Awesome Utility */
+@font-face {
+	font-family: FontAwesomeUtility;
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+	src: url('./fa-utility-semibold-600.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeUtilityDuo;
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+	src: url('./fa-utility-duo-semibold-600.woff2') format('woff2');
+}
+@font-face {
+	font-family: FontAwesomeUtilityFill;
+	font-style: normal;
+	font-weight: 600;
+	font-display: block;
+	src: url('./fa-utility-fill-semibold-600.woff2') format('woff2');
+}
+
 /* Font Awesome Icon Classes */
 .fa {
 	position: relative;
-	width: var(--iconSize);
-	height: var(--iconSize);
-	font-size: var(--iconSize);
+	width: var(--iconSize, 1em);
+	height: var(--iconSize, 1em);
+	font-size: var(--iconSize, 1em);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -237,4 +360,110 @@
 .fa.brand {
 	font-family: FontAwesomeBrand;
 	font-weight: 400;
+}
+
+/* Chisel */
+.fa.chisel-regular {
+	font-family: FontAwesomeChisel;
+	font-weight: 400;
+}
+
+/* Etch */
+.fa.etch-solid {
+	font-family: FontAwesomeEtch;
+	font-weight: 900;
+}
+
+/* Graphite */
+.fa.graphite-thin {
+	font-family: FontAwesomeGraphite;
+	font-weight: 100;
+}
+
+/* Jelly */
+.fa.jelly-regular {
+	font-family: FontAwesomeJelly;
+	font-weight: 400;
+}
+.fa.jelly-duo-regular {
+	font-family: FontAwesomeJellyDuo;
+	font-weight: 400;
+}
+.fa.jelly-duo-regular::after {
+	position: absolute;
+	display: block;
+	color: inherit;
+	content: attr(data-content) attr(data-content);
+	opacity: 0.3;
+}
+.fa.jelly-fill-regular {
+	font-family: FontAwesomeJellyFill;
+	font-weight: 400;
+}
+
+/* Notdog */
+.fa.notdog-solid {
+	font-family: FontAwesomeNotdog;
+	font-weight: 900;
+}
+.fa.notdog-duo-solid {
+	font-family: FontAwesomeNotdogDuo;
+	font-weight: 900;
+}
+.fa.notdog-duo-solid::after {
+	position: absolute;
+	display: block;
+	color: inherit;
+	content: attr(data-content) attr(data-content);
+	opacity: 0.3;
+}
+
+/* Slab */
+.fa.slab-regular {
+	font-family: FontAwesomeSlab;
+	font-weight: 400;
+}
+.fa.slab-press-regular {
+	font-family: FontAwesomeSlabPress;
+	font-weight: 400;
+}
+
+/* Thumbprint */
+.fa.thumbprint-light {
+	font-family: FontAwesomeThumbprint;
+	font-weight: 300;
+}
+.fa.thumbprint-light::after {
+	position: absolute;
+	display: block;
+	color: inherit;
+	content: attr(data-content) attr(data-content);
+	opacity: 0.3;
+}
+
+/* Whiteboard */
+.fa.whiteboard-semibold {
+	font-family: FontAwesomeWhiteboard;
+	font-weight: 600;
+}
+
+/* Utility */
+.fa.utility-semibold {
+	font-family: FontAwesomeUtility;
+	font-weight: 600;
+}
+.fa.utility-duo-semibold {
+	font-family: FontAwesomeUtilityDuo;
+	font-weight: 600;
+}
+.fa.utility-duo-semibold::after {
+	position: absolute;
+	display: block;
+	color: inherit;
+	content: attr(data-content) attr(data-content);
+	opacity: 0.3;
+}
+.fa.utility-fill-semibold {
+	font-family: FontAwesomeUtilityFill;
+	font-weight: 600;
 }
